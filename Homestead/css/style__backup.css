@@ -1,0 +1,181 @@
+.bg-grey {
+    background-color: #5c5a5a;
+}
+body {
+    font-size: 16px;
+    font-family: Metropolis,Arial,sans-serif,-apple-system;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: Playfair Display,serif,-apple-system;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+nav .navbar-toggler {
+    z-index: 21;
+    border: 0;
+    box-shadow: none!important;
+}
+
+.navbar-toggler {
+    --button-color: #212529;
+    overflow: hidden;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.navbar-toggler .hamburger {
+    transition: translate 1s, rotate 1s;
+}
+
+.navbar-toggler[aria-expanded="true"] .hamburger {
+    translate: 3px 0px;
+    rotate: 0.125turn;
+    --button-color: #fff;
+}
+
+.navbar-toggler .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+}
+
+.navbar-toggler[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+}
+/*navbar toggler*/
+
+.section-spacer {
+    height: 160px;
+}
+
+
+#mainNav .navbar-nav {
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Playfair Display,serif,-apple-system;
+}
+
+#mainNav .navbar-nav li a.nav-link{
+    color: #fff!important;
+}
+
+.navbar-brand img {
+    width: 164.95px;
+}
+
+#mainNav {
+    position: fixed;
+    background: #212529;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s,visibility .35s,height .35s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainNav.show {
+    opacity: .97;
+    visibility: visible;
+    height: 100%;
+    z-index: 20;
+}
+
+/*above the fold*/
+.aboveTF{
+    margin-bottom: 100px;
+}
+
+.aboveTF p, .aboveTF ul {
+    color: #5c5a5a;
+}
+.section-title {
+    font-family: Playfair Display,serif,-apple-system;
+}
+
+.headshot {
+    width: 300px;
+    height: auto;
+}
+
+.ctaButton {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #212529;
+    color: #212529;
+    font-size: 18px;
+    transition: 400ms linear;
+}
+
+.ctaButton:hover {
+    background-color: #212529;
+    color: #fff;
+}
+
+/*logo bar*/
+.logoBar {
+    margin-bottom: 50px;
+}
+
+.logoBar img {
+    filter: grayscale(100%);
+    transition: 300ms linear;
+}
+
+.logoBar img:hover {
+    filter: grayscale(0%);
+}
+
+/*testimonialSection*/
+.testimonialSection {
+    margin-bottom: 50px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: rgb(204 204 204 / 70%);
+}
+
+.testimonialSection .card-img-top {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.testimonialSection .card {
+    border: none;
+    background-color: rgb(204 204 204 / 0%);
+    transition: 300ms linear;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.testimonialSection .card:hover {
+    background-color: #fff;
+    border: 1px solid rgb(204 204 204 / 70%);
+    box-shadow: 10px 10px rgb(204 204 204 / 70%);
+    filter: grayscale(0);
+}
+
+/* fbSection */
+.fbSection {
+    margin-bottom: 100px;
+}
+
+.fbSection .img-fluid {
+    width: 200px;
+    height: auto;
+}
