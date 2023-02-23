@@ -4,7 +4,7 @@ document.onreadystatechange = function() {
     window.addEventListener('scroll', function(e) {
       lastScrollPosition = window.scrollY;
       
-      if (lastScrollPosition > 1)
+      if (lastScrollPosition > 10)
         navbar.classList.add('stuck');
       else
         navbar.classList.remove('stuck');
